@@ -1,0 +1,201 @@
+cd 'C:\Users\Alexey\Dropbox\pavel_vitaliy_alexey\2016_5 year\ittmm\matlab model'
+set size square
+set grid;
+#lambda; B; E; W; Wq; S
+
+#a;b;g;Q1;Q0*;Q1*;w
+set terminal eps
+set key width 1
+
+############### c0
+
+set key on box inside top left
+set xlabel "{/Symbol l}"
+set ylabel "B({/Symbol l})"
+set output 'images/B_lambda_c0.eps'
+plot 'BEWWqS_lambda_c0_80.txt' u 1:2 s b w l t 'c_0 = 80',\
+     'BEWWqS_lambda_c0_100.txt' u 1:2 s b w l t ' c_0 = 100',\
+     'BEWWqS_lambda_c0_120.txt' u 1:2 s b w l t ' c_0 = 120',\
+     'BEWWqS_lambda_c0_140.txt' u 1:2 s b w l t ' c_0 = 140'
+
+set key on box inside bot right
+set xlabel "{/Symbol l}"
+set ylabel "E({/Symbol l})"
+set output 'images/E_lambda_c0.eps'
+plot 'BEWWqS_lambda_c0_80.txt' u 1:3 s b w l t ' c_0 = 80',\
+     'BEWWqS_lambda_c0_100.txt' u 1:3 s b w l t ' c_0 = 100',\
+     'BEWWqS_lambda_c0_120.txt' u 1:3 s b w l t ' c_0 = 120',\
+     'BEWWqS_lambda_c0_140.txt' u 1:3 s b w l t ' c_0 = 140'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "W({/Symbol l})"
+set output 'images/W_lambda_c0.eps'
+plot 'BEWWqS_lambda_c0_80.txt' u 1:4 s b w l t ' c_0 = 80',\
+     'BEWWqS_lambda_c0_100.txt' u 1:4 s b w l t ' c_0 = 100',\
+     'BEWWqS_lambda_c0_120.txt' u 1:4 s b w l t ' c_0 = 120',\
+     'BEWWqS_lambda_c0_140.txt' u 1:4 s b w l t ' c_0 = 140'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "W_q({/Symbol l})"
+set output 'images/Wq_lambda_c0.eps'
+plot 'BEWWqS_lambda_c0_80.txt' u 1:5 s b w l t ' c_0 = 80',\
+     'BEWWqS_lambda_c0_100.txt' u 1:5 s b w l t ' c_0 = 100',\
+     'BEWWqS_lambda_c0_120.txt' u 1:5 s b w l t ' c_0 = 120',\
+     'BEWWqS_lambda_c0_140.txt' u 1:5 s b w l t ' c_0 = 140'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "S({/Symbol l})"
+set output 'images/S_lambda_c0.eps'
+plot 'BEWWqS_lambda_c0_80.txt' u 1:6 s b w l t ' c_0 = 80',\
+     'BEWWqS_lambda_c0_100.txt' u 1:6 s b w l t ' c_0 = 100',\
+     'BEWWqS_lambda_c0_120.txt' u 1:6 s b w l t ' c_0 = 120',\
+     'BEWWqS_lambda_c0_140.txt' u 1:6 s b w l t ' c_0 = 140'     
+
+############### k
+
+set key on box inside top left
+set xlabel "{/Symbol l}"
+set ylabel "B({/Symbol l})"
+set output 'images/B_lambda_k.eps'
+plot 'BEWWqS_lambda_k_10.txt' u 1:2 s b w l t 'k = 10',\
+     'BEWWqS_lambda_k_20.txt' u 1:2 s b w l t ' k = 20',\
+     'BEWWqS_lambda_k_40.txt' u 1:2 s b w l t ' k = 40',\
+     'BEWWqS_lambda_k_60.txt' u 1:2 s b w l t ' k = 60'
+
+set key on box inside bot right
+set xlabel "{/Symbol l}"
+set ylabel "E({/Symbol l})"
+set output 'images/E_lambda_k.eps'
+plot 'BEWWqS_lambda_k_10.txt' u 1:3 s b w l t ' k = 10',\
+     'BEWWqS_lambda_k_20.txt' u 1:3 s b w l t ' k = 20',\
+     'BEWWqS_lambda_k_40.txt' u 1:3 s b w l t ' k = 40',\
+     'BEWWqS_lambda_k_60.txt' u 1:3 s b w l t ' k = 60'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "W({/Symbol l})"
+set output 'images/W_lambda_k.eps'
+plot 'BEWWqS_lambda_k_10.txt' u 1:4 s b w l t ' k = 10',\
+     'BEWWqS_lambda_k_20.txt' u 1:4 s b w l t ' k = 20',\
+     'BEWWqS_lambda_k_40.txt' u 1:4 s b w l t ' k = 40',\
+     'BEWWqS_lambda_k_60.txt' u 1:4 s b w l t ' k = 60'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "W_q({/Symbol l})"
+set output 'images/Wq_lambda_k.eps'
+plot 'BEWWqS_lambda_k_10.txt' u 1:5 s b w l t ' k = 10',\
+     'BEWWqS_lambda_k_20.txt' u 1:5 s b w l t ' k = 20',\
+     'BEWWqS_lambda_k_40.txt' u 1:5 s b w l t ' k = 40',\
+     'BEWWqS_lambda_k_60.txt' u 1:5 s b w l t ' k = 60'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "S({/Symbol l})"
+set output 'images/S_lambda_k.eps'
+plot 'BEWWqS_lambda_k_10.txt' u 1:6 s b w l t ' k = 10',\
+     'BEWWqS_lambda_k_20.txt' u 1:6 s b w l t ' k = 20',\
+     'BEWWqS_lambda_k_40.txt' u 1:6 s b w l t ' k = 40',\
+     'BEWWqS_lambda_k_60.txt' u 1:6 s b w l t ' k = 60'    
+
+
+############### R
+
+set key on box inside top left
+set xlabel "{/Symbol l}"
+set ylabel "B({/Symbol l})"
+set output 'images/B_lambda_R.eps'
+plot 'BEWWqS_lambda_R_90.txt' u 1:2 s b w l t 'R = 90',\
+     'BEWWqS_lambda_R_190.txt' u 1:2 s b w l t ' R = 190',\
+     'BEWWqS_lambda_R_290.txt' u 1:2 s b w l t ' R = 290',\
+     'BEWWqS_lambda_R_390.txt' u 1:2 s b w l t ' R = 390'
+
+set key on box inside bot right
+set xlabel "{/Symbol l}"
+set ylabel "E({/Symbol l})"
+set output 'images/E_lambda_R.eps'
+plot 'BEWWqS_lambda_R_90.txt' u 1:3 s b w l t ' R = 90',\
+     'BEWWqS_lambda_R_190.txt' u 1:3 s b w l t ' R = 190',\
+     'BEWWqS_lambda_R_290.txt' u 1:3 s b w l t ' R = 290',\
+     'BEWWqS_lambda_R_390.txt' u 1:3 s b w l t ' R = 390'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "W({/Symbol l})"
+set output 'images/W_lambda_R.eps'
+plot 'BEWWqS_lambda_R_90.txt' u 1:4 s b w l t ' R = 90',\
+     'BEWWqS_lambda_R_190.txt' u 1:4 s b w l t ' R = 190',\
+     'BEWWqS_lambda_R_290.txt' u 1:4 s b w l t ' R = 290',\
+     'BEWWqS_lambda_R_390.txt' u 1:4 s b w l t ' R = 390'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "W_q({/Symbol l})"
+set output 'images/Wq_lambda_R.eps'
+plot 'BEWWqS_lambda_R_90.txt' u 1:5 s b w l t ' R = 90',\
+     'BEWWqS_lambda_R_190.txt' u 1:5 s b w l t ' R = 190',\
+     'BEWWqS_lambda_R_290.txt' u 1:5 s b w l t ' R = 290',\
+     'BEWWqS_lambda_R_390.txt' u 1:5 s b w l t ' R = 390'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "S({/Symbol l})"
+set output 'images/S_lambda_R.eps'
+plot 'BEWWqS_lambda_R_90.txt' u 1:6 s b w l t ' R = 90',\
+     'BEWWqS_lambda_R_190.txt' u 1:6 s b w l t ' R = 190',\
+     'BEWWqS_lambda_R_290.txt' u 1:6 s b w l t ' R = 290',\
+     'BEWWqS_lambda_R_390.txt' u 1:6 s b w l t ' R = 390'    
+
+############### theta
+
+set key on box inside top left
+set xlabel "{/Symbol l}"
+set ylabel "B({/Symbol l})"
+set output 'images/B_lambda_theta.eps'
+plot 'BEWWqS_lambda_theta_0.002500.txt' u 1:2 s b w l t ' {/Symbol q} = 0.0025',\
+     'BEWWqS_lambda_theta_0.005000.txt' u 1:2 s b w l t ' {/Symbol q} = 0.005',\
+     'BEWWqS_lambda_theta_0.010000.txt' u 1:2 s b w l t ' {/Symbol q} = 0.01',\
+     'BEWWqS_lambda_theta_0.020000.txt' u 1:2 s b w l t ' {/Symbol q} = 0.02'
+
+set key on box inside bot right
+set xlabel "{/Symbol l}"
+set ylabel "E({/Symbol l})"
+set output 'images/E_lambda_theta.eps'
+plot 'BEWWqS_lambda_theta_0.002500.txt' u 1:3 s b w l t ' {/Symbol q} = 0.0025',\
+     'BEWWqS_lambda_theta_0.005000.txt' u 1:3 s b w l t ' {/Symbol q} = 0.005',\
+     'BEWWqS_lambda_theta_0.010000.txt' u 1:3 s b w l t ' {/Symbol q} = 0.01',\
+     'BEWWqS_lambda_theta_0.020000.txt' u 1:3 s b w l t ' {/Symbol q} = 0.02'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "W({/Symbol l})"
+set output 'images/W_lambda_theta.eps'
+plot 'BEWWqS_lambda_theta_0.002500.txt' u 1:4 s b w l t ' {/Symbol q} = 0.0025',\
+     'BEWWqS_lambda_theta_0.005000.txt' u 1:4 s b w l t ' {/Symbol q} = 0.005',\
+     'BEWWqS_lambda_theta_0.010000.txt' u 1:4 s b w l t ' {/Symbol q} = 0.01',\
+     'BEWWqS_lambda_theta_0.020000.txt' u 1:4 s b w l t ' {/Symbol q} = 0.02'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "W_q({/Symbol l})"
+set output 'images/Wq_lambda_theta.eps'
+plot 'BEWWqS_lambda_theta_0.002500.txt' u 1:5 s b w l t ' {/Symbol q} = 0.0025',\
+     'BEWWqS_lambda_theta_0.005000.txt' u 1:5 s b w l t ' {/Symbol q} = 0.005',\
+     'BEWWqS_lambda_theta_0.010000.txt' u 1:5 s b w l t ' {/Symbol q} = 0.01',\
+     'BEWWqS_lambda_theta_0.020000.txt' u 1:5 s b w l t ' {/Symbol q} = 0.02'
+
+set key on box inside top right
+set xlabel "{/Symbol l}"
+set ylabel "S({/Symbol l})"
+set output 'images/S_lambda_theta.eps'
+plot 'BEWWqS_lambda_theta_0.002500.txt' u 1:6 s b w l t ' {/Symbol q} = 0.0025',\
+     'BEWWqS_lambda_theta_0.005000.txt' u 1:6 s b w l t ' {/Symbol q} = 0.005',\
+     'BEWWqS_lambda_theta_0.010000.txt' u 1:6 s b w l t ' {/Symbol q} = 0.01',\
+     'BEWWqS_lambda_theta_0.020000.txt' u 1:6 s b w l t ' {/Symbol q} = 0.02'    
+
+
+
+set output 'images/temp.eps'
